@@ -1,4 +1,4 @@
-import { Alert, StyleSheet, Text, View } from "react-native";
+import { Alert, ScrollView, StyleSheet, Text, View } from "react-native";
 import React from "react";
 import colors from "../Theme/Color";
 import { BaseButton, BaseInput } from "../Components";
@@ -65,7 +65,7 @@ const AddProductScreen = () => {
     }
   };
   return (
-    <View style={[styles.p10, styles.root]}>
+    <ScrollView style={[styles.p10, styles.root]}>
       <Text style={styles.title}>Add Product</Text>
       <BaseInput
         name="id"
@@ -98,7 +98,7 @@ const AddProductScreen = () => {
         onPress={handleSubmit(onSubmit)}
         type="primary"
       />
-    </View>
+    </ScrollView>
   );
 };
 

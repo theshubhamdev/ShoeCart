@@ -1,10 +1,10 @@
 import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { CartScreen, HomeScreen } from "../Screens";
-import { HomeStackParamList } from "../Types/navigation";
+import { CartScreen } from "../Screens";
+import { CustomerStackParamList } from "../Types/navigation";
 import CustomerScreen from "../Screens/CustomerScreen";
 
-const Stack = createNativeStackNavigator<HomeStackParamList>();
+const Stack = createNativeStackNavigator<CustomerStackParamList>();
 const CustomerStackNavigator = () => {
   return (
     <Stack.Navigator>
